@@ -6,11 +6,12 @@
  * * greater than or less than 5, or is zero..
  * *
  * * Return: 0 on success
- * */
+ */
 int main(void)
 {
 	int n;
 	char Run[] = "Last digit of";
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	printf("%s %d is %d and is ", Run, n, n % 10);
