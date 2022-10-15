@@ -9,12 +9,16 @@ int main(void)
 {
 int a;
 
-for (a = 48; a < 57; a++)
+for (a = 48; a <= 57; a++)
 {
 putchar(a);
+	if (a == 57)
+	{
+		putchar('\n');
+		break;
+	}
 putchar(',');
 putchar(' ');
 }
-putchar(57);
 return (0);
 }
