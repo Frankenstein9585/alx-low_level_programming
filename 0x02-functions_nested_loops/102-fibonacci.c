@@ -12,11 +12,11 @@ long int next = 0;
 int k;
 
 printf("%lu, %lu, ", i, j);
-for (k = 0; k < 47; k++)
+for (k = 0; k < 48; k++)
 {
 next = i + j;
 printf("%lu", next);
-if (k < 46)
+if (k < 47)
 {
 putchar(',');
 putchar(' ');
