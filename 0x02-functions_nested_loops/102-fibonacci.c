@@ -9,9 +9,10 @@ int main(void)
 long int i = 1;
 long int j = 2;
 long int next = 0;
+int k;
 
 printf("%lu, %lu, ", i, j);
-for (int k = 0; k < 47; k++)
+for (k = 0; k < 47; k++)
 {
 next = i + j;
 printf("%lu", next);
