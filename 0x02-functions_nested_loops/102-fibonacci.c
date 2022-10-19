@@ -2,7 +2,7 @@
 /**
   * main - fibonacci
   *
-  * Return: 1
+  * Return: 0
   */
 int main(void)
 {
@@ -28,4 +28,5 @@ putchar('\n');
 i = j;
 j = next;
 }
+return (0);
 }
