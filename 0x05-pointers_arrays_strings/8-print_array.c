@@ -1,25 +1,29 @@
 #include "main.h"
 #include <stdio.h>
 /**
-  * print_array - prints every other character of a string
-  *
-  * @a: string to be operated on
-  * @n: number of elements to be printed
-  */
+ * print_array - print array up to n elements
+ * @a: array to be read
+ * @n: number to be read
+ * Return: always 0
+ */
+
 void print_array(int *a, int n)
 {
-	int i = 0;
+	int i;
 
-	while (i < n)
+	if (n > 0)
 	{
-		if (i < n - 1)
+		for (i = 0 ; n > i; i++)
 		{
-			printf("%d, ", a[i]);
+			if (i != n - 1)
+			{
+				printf("%d, ", a[i]);
+			}
+			else
+			{
+				printf("%d", a[i]);
+			}
 		}
-		else
-		{
-			printf("%d\n", a[i]);
-		}
-		i++;
 	}
+	printf("\n");
 }
