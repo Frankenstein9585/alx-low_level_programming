@@ -25,6 +25,7 @@ char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y',
 			if (s[i] == alphabet[j])
 			{
 				s[i] = rot13key[j];
+				break;
 			}
 		}
 		i++;
