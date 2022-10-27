@@ -1,12 +1,12 @@
 #include "main.h"
 /**
-  * rev_array - compares two strings
+  * reverse_array - compares two strings
   *
   * @a: array to be reversed
   * @n: number of elements in the array
   *
   */
-void rev_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int temp;
 	int i;
