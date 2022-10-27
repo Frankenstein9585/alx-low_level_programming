@@ -1,4 +1,3 @@
-#include <string.h>
 #include "main.h"
 /**
   * _strncpy - concatenates two strings
