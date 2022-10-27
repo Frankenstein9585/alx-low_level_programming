@@ -32,7 +32,3 @@ char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y',
 	return (s);
 }
 
-int main()
-{
-
-}
