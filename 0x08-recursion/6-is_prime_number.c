@@ -37,3 +37,4 @@ int is_prime_number(int n)
 	int a = 2;
 
 	return (prime_found(a, n));
+}
