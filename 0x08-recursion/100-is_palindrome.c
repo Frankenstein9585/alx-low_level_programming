@@ -28,7 +28,7 @@ int checker(char *str, int len, int count)
 	return (checker(str, len - 1, count + 1));
 	return (0);
 }
-}
+
 /**
  * is_palindrome - checks if the string is a palindrome
  * @s: the string to check
