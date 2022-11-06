@@ -1,6 +1,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
   * main - Prints the name of this function
   * @argc: Int argument gotten from command line
