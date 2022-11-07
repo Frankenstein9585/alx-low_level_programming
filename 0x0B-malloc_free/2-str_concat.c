@@ -14,7 +14,10 @@ char *str_concat(char *s1, char *s2)
 	int size2 = (int) strlen(s2);
 
 	ptr = malloc(size1 + size2 + 1);
-
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	while (*s1)
 		ptr[i++] = *s1++;
 	while (*s2)
