@@ -6,11 +6,11 @@
   * @s2: second string
   * Return: concatenated string or NULL if error
   */
-char *string_nconcat(char *s1, char *s2)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	int i = 0;
-	int j = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
 	int size1 = (int) strlen(s1);
 	int size2 = n;
 
@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2)
 		ptr[i++] = *s1++;
 
 
-	if (n >= (int) strlen(s2))
+	if (n >= (unsigned int) strlen(s2))
 	{
 		while (*s2)
 			ptr[i++] = *s2++;
