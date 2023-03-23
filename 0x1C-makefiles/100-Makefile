@@ -7,7 +7,7 @@ HEADER = m.h
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(HEADER) $(OBJ)
-	$(CC) -Wall -Werror -Wextra -pedantic $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY: all clean oclean fclean re
 
