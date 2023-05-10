@@ -1,7 +1,8 @@
 #include "search_algos.h"
 #include <math.h>
 /**
- * interpolation_search - searches for a value in an array using interpolation search
+ * interpolation_search - searches for a value in
+ * an array using interpolation search
  * @array: pointer to the first element of the array to be searched
  * @size: number of elements in the array
  * @value: the value to search for
@@ -15,9 +16,12 @@ int interpolation_search(int *array, size_t size, int value)
 	size_t high = size - 1;
 	size_t pos;
 
-	while (array[high] != array[low] && (value >= array[low] && value <= array[high]))
+	while (array[high] != array[low] &&
+			(value >= array[low] && value <= array[high]))
 	{
-		pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
+		pos = low + (((double)(high - low) /
+					(array[high] - array[low])) *
+				(value - array[low]));
 		printf("Value checked array[%lu] = [%d]\n", pos, array[pos]);
 
 		if (array[pos] < value)
